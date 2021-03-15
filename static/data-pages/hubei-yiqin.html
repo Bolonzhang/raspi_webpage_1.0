@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>湖北省疫情图</title>
+    <link rel="icon" type="image/png" href="../photos/logos/博.png">
+    <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+    <script type="text/javascript" src="https://assets.pyecharts.org/assets/maps/hubei.js"></script>
+    <style>
+        div#hubeiJieshao {
+            font-size: 20px;
+        }
+        hr {
+            /* margin: auto 0 auto 0; */
+            width: 900px;
+        }
+        div.hubeiDitu, img {
+            padding: 0;
+            margin: 5px auto;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="hubeiJieshao">
+        <p>这是我通过Python的pyecharts包做的“湖北省疫情可视化地图”</p>
+        <p>资料来源于天行API提供的数据接口</p>
+        <p>代码：<a href="https://github.com/Bolonzhang/yiqin" target="_blank">https://github.com/Bolonzhang/yiqin</a></p>
+        <p>👇<strong>点击地图</strong>可查看详细数据</p>
+        <hr>
+    </div>
+    <div id="20735a18852f4977b37a99dd43c38a38" class="chart-container hubeiDtu" style="width:900px; height:500px;"></div>
+    <script>
+        var chart_20735a18852f4977b37a99dd43c38a38 = echarts.init(
+            document.getElementById('20735a18852f4977b37a99dd43c38a38'), 'white', {renderer: 'canvas'});
+        var option_20735a18852f4977b37a99dd43c38a38 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "map",
+            "name": "\u786e\u8bca\u4eba\u6570",
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "mapType": "\u6e56\u5317",
+            "data": [
+                {
+                    "name": "\u6b66\u6c49\u5e02",
+                    "value": 34691
+                },
+                {
+                    "name": "\u5b5d\u611f\u5e02",
+                    "value": 2044
+                },
+                {
+                    "name": "\u9ec4\u5188\u5e02",
+                    "value": 1038
+                },
+                {
+                    "name": "\u9102\u5dde\u5e02",
+                    "value": 848
+                },
+                {
+                    "name": "\u8346\u5dde\u5e02",
+                    "value": 758
+                },
+                {
+                    "name": "\u968f\u5dde\u5e02",
+                    "value": 668
+                },
+                {
+                    "name": "\u5b9c\u660c\u5e02",
+                    "value": 569
+                },
+                {
+                    "name": "\u8944\u9633\u5e02",
+                    "value": 552
+                },
+                {
+                    "name": "\u8346\u95e8\u5e02",
+                    "value": 451
+                },
+                {
+                    "name": "\u9ec4\u77f3\u5e02",
+                    "value": 420
+                },
+                {
+                    "name": "\u5341\u5830\u5e02",
+                    "value": 353
+                },
+                {
+                    "name": "\u54b8\u5b81\u5e02",
+                    "value": 321
+                },
+                {
+                    "name": "\u4ed9\u6843\u5e02",
+                    "value": 240
+                },
+                {
+                    "name": "\u5929\u95e8\u5e02",
+                    "value": 200
+                },
+                {
+                    "name": "\u6069\u65bd\u571f\u5bb6\u65cf\u82d7\u65cf\u81ea\u6cbb\u5dde",
+                    "value": 96
+                },
+                {
+                    "name": "\u6f5c\u6c5f\u5e02",
+                    "value": 96
+                },
+                {
+                    "name": "\u795e\u519c\u67b6\u6797\u533a",
+                    "value": 1
+                }
+            ],
+            "roam": true,
+            "zoom": 1,
+            "showLegendSymbol": true,
+            "emphasis": {}
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u786e\u8bca\u4eba\u6570"
+            ],
+            "selected": {
+                "\u786e\u8bca\u4eba\u6570": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0
+    },
+    "title": [
+        {
+            "text": "\u6e56\u5317\u7701\u75ab\u60c5\u56fe(\u622a\u81f3 2019/2/21 16:00)",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ],
+    "visualMap": {
+        "show": true,
+        "type": "piecewise",
+        "min": 0,
+        "max": 100,
+        "inRange": {
+            "color": [
+                "#50a3ba",
+                "#eac763",
+                "#d94e5d"
+            ]
+        },
+        "calculable": true,
+        "inverse": false,
+        "splitNumber": 5,
+        "orient": "vertical",
+        "showLabel": true,
+        "itemWidth": 20,
+        "itemHeight": 14,
+        "borderWidth": 0,
+        "pieces": [
+            {
+                "min": 5000,
+                "label": ">=5000"
+            },
+            {
+                "min": 1500,
+                "max": 4999,
+                "label": "1500-4999"
+            },
+            {
+                "min": 1000,
+                "max": 1499,
+                "label": "1000-1499"
+            },
+            {
+                "min": 500,
+                "max": 999,
+                "label": "500-999"
+            },
+            {
+                "min": 200,
+                "max": 499,
+                "label": "200-499"
+            },
+            {
+                "max": 199,
+                "label": "0-199"
+            }
+        ]
+    }
+};
+        chart_20735a18852f4977b37a99dd43c38a38.setOption(option_20735a18852f4977b37a99dd43c38a38);
+    </script>
+    <hr>
+    <img src="../photos/dataVis/hubei-col.png" style="width: 800px;">
+</body>
+</html>
